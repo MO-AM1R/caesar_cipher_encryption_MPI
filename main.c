@@ -1,14 +1,16 @@
+# include <stdlib.h>
+# include <limits.h>
+# include <string.h>
 # include <stdio.h>
 # include <mpi.h>
-# include <string.h>
 
-void encryptHelper(char sub[], int size);
-void decryptHelper(char sub[], int size);
-int readFromFile(char text[]);
+void encryptHelper(char sub[], int size, int encrypt);
+int  selectChoice(int* choice, char output[]);
+int  readFromFile(char text[]);
 void takeInput(char text[]);
 
 int main(int argc, char *argv[]) {
-    int processesNumber, rank, size, split, mode = 0, encrypt = 0;
+    int processesNumber, rank, size, split, mode, encrypt;
     MPI_Status status;
     char test[100];
 
@@ -19,11 +21,22 @@ int main(int argc, char *argv[]) {
 
     // scatter the string among all cores by master core
     if (rank == 0) {
-        int check = 1;
-        if (mode) check = readFromFile(test);
+        int check = selectChoice(&mode, "\n1- File input mode\n2- Console input mode\nEnter the mode -> ");
+        if (!check) {
+            printf("Invalid Input");
+            return 0;
+        }
+
+        if (mode == 1) {
+            if (!readFromFile(test)) return 0;
+        }
         else takeInput(test);
 
-        if (!check) return 0;
+        check = selectChoice(&encrypt, "\n1- Encrypt the text\n2- Decrypt the text\nEnter the choice -> ");
+        if (!check) {
+            printf("Invalid Input");
+            return 0;
+        }
 
         size = (int) strlen(test);
         double temp = (double)size / (processesNumber - 1);
@@ -37,6 +50,7 @@ int main(int argc, char *argv[]) {
             sub[ind] = '\0';
 
             MPI_Send(&ind, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
+            MPI_Send(&encrypt, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
             MPI_Send(&sub, ind, MPI_CHAR, i, 0, MPI_COMM_WORLD);
         }
     }
@@ -44,13 +58,13 @@ int main(int argc, char *argv[]) {
     if (rank != 0) {
         int subSize;
         MPI_Recv(&subSize, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, &status);
+        MPI_Recv(&encrypt, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, &status);
 
         char sub[subSize];
         MPI_Recv(&sub, subSize, MPI_CHAR, 0, 0, MPI_COMM_WORLD, &status);
         sub[subSize] = '\0';
 
-        if (encrypt) encryptHelper(sub, subSize);
-        else decryptHelper(sub, subSize);
+        encryptHelper(sub, subSize, encrypt);
 
         MPI_Send(&subSize, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
         MPI_Send(&sub, subSize, MPI_CHAR, 0, 0, MPI_COMM_WORLD);
@@ -76,35 +90,32 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-void decryptHelper(char sub[], int size) {
-    for (int i = 0; i < size; ++i)
-        sub[i] = (char)((int) sub[i] - 3);
+void encryptHelper(char sub[], int size, int encrypt) {
+    int shift = 3;
+    if (encrypt != 1) shift = -3;
 
-}
-
-void encryptHelper(char sub[], int size) {
     for (int i = 0; i < size; ++i)
-        sub[i] = (char)((int) sub[i] + 3);
+        sub[i] = (char)((int) sub[i] + shift);
 }
 
 int readFromFile(char text[]){
-    FILE *fptr;
+    FILE* filePtr;
 
     // Open a file in read mode
-    fptr = fopen("text.txt", "r");
+    filePtr = fopen("text.txt", "r");
 
     // If the file exist
-    if(fptr == NULL) {
+    if(filePtr == NULL) {
         printf("Not able to open the file.\nPlease check the file is exist");
-        fclose(fptr);
+        fclose(filePtr);
         return 0;
     }
 
     // Read the content and print it
-    fgets(text, 100, fptr);
+    fgets(text, 100, filePtr);
 
     // Close the file
-    fclose(fptr);
+    fclose(filePtr);
     return 1;
 }
 
@@ -116,4 +127,18 @@ void takeInput(char text[]){
 
     // store the input int input variable
     fgets(text, INPUT_SIZE, stdin);
+}
+
+int selectChoice(int* choice, char output[]){
+    char input[100];
+    char* ptr;
+
+    printf("%s", output);
+    // To make stdout unbuffered
+    fflush(stdout);
+
+    fgets(input, 100, stdin);
+    *choice = (int)strtol(input, &ptr, 10);
+
+    return (*choice == INT_MAX || *choice == INT_MIN || (*choice != 1 && *choice != 2)) ? 0 : 1;
 }
