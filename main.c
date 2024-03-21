@@ -4,9 +4,11 @@
 
 void encryptHelper(char sub[], int size);
 void decryptHelper(char sub[], int size);
+int readFromFile(char text[]);
+void takeInput(char text[]);
 
 int main(int argc, char *argv[]) {
-    int processesNumber, rank, size, split, encrypt = 1;
+    int processesNumber, rank, size, split, mode = 0, encrypt = 0;
     MPI_Status status;
     char test[100];
 
@@ -17,7 +19,12 @@ int main(int argc, char *argv[]) {
 
     // scatter the string among all cores by master core
     if (rank == 0) {
-        strcpy(test, "Hello World 1234!");
+        int check = 1;
+        if (mode) check = readFromFile(test);
+        else takeInput(test);
+
+        if (!check) return 0;
+
         size = (int) strlen(test);
         double temp = (double)size / (processesNumber - 1);
         split = temp == (int)temp ? (int)temp : (int)temp + 1;
@@ -78,4 +85,35 @@ void decryptHelper(char sub[], int size) {
 void encryptHelper(char sub[], int size) {
     for (int i = 0; i < size; ++i)
         sub[i] = (char)((int) sub[i] + 3);
+}
+
+int readFromFile(char text[]){
+    FILE *fptr;
+
+    // Open a file in read mode
+    fptr = fopen("text.txt", "r");
+
+    // If the file exist
+    if(fptr == NULL) {
+        printf("Not able to open the file.\nPlease check the file is exist");
+        fclose(fptr);
+        return 0;
+    }
+
+    // Read the content and print it
+    fgets(text, 100, fptr);
+
+    // Close the file
+    fclose(fptr);
+    return 1;
+}
+
+void takeInput(char text[]){
+    enum { INPUT_SIZE = 100};
+    printf("Enter the text -> ");
+    // To make stdout unbuffered
+    fflush(stdout);
+
+    // store the input int input variable
+    fgets(text, INPUT_SIZE, stdin);
 }
