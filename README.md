@@ -35,7 +35,7 @@ The program operates in two modes:
 
 2. **Compile the Program:**
    ```
-   mpicc caesar_cipher_mpi.c -o caesar_cipher_mpi
+   mpicc main.c -o caesar_cipher_mpi
    ```
 
 3. **Execute the Program:**
