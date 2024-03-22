@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/addr2line"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ar"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mohamed-amir/Desktop/HPC/Assignment 1/Problem 2/cmake-build-debug"
+			"value" : "d:/My Study/Faculty/Third Year/Second Semester/HPC/Assignments/Assignment 1/Assignment 1/Problem 2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/cmake"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/cpack"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/ctest"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/c++"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-13"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-13"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -270,6 +270,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C++ applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+		},
+		{
 			"name" : "CMAKE_C_COMPILER",
 			"properties" : 
 			[
@@ -283,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/cc"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -299,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-13"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -315,7 +331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-13"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -398,6 +414,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_C_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+		},
+		{
 			"name" : "CMAKE_DLLTOOL",
 			"properties" : 
 			[
@@ -411,7 +443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_DLLTOOL-NOTFOUND"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -423,7 +455,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ELF"
+			"value" : "Unknown"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -543,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mohamed-amir/Desktop/HPC/Assignment 1/Problem 2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/My Study/Faculty/Third Year/Second Semester/HPC/Assignments/Assignment 1/Assignment 1/Problem 2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -594,6 +626,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_GNUtoMS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -603,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mohamed-amir/Desktop/HPC/Assignment 1/Problem 2"
+			"value" : "D:/My Study/Faculty/Third Year/Second Semester/HPC/Assignments/Assignment 1/Assignment 1/Problem 2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -615,19 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local"
-		},
-		{
-			"name" : "CMAKE_INSTALL_SO_NO_EXE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Install .so files without execute permission."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "C:/Program Files (x86)/Problem_2"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -643,7 +675,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ld"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -655,7 +687,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/265/bin/ninja/linux/x64/ninja"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -751,7 +783,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/nm"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -779,7 +811,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objcopy"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -795,7 +827,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objdump"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -859,7 +891,115 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ranlib"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe"
+		},
+		{
+			"name" : "CMAKE_RC_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "RC compiler"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"
+		},
+		{
+			"name" : "CMAKE_RC_COMPILER_WORKS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -875,7 +1015,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/readelf"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -887,7 +1027,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1095,7 +1235,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/strip"
+			"value" : "C:/Users/memoh/AppData/Local/Programs/CLion/bin/mingw/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1112,18 +1252,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "CMAKE_TAPI-NOTFOUND"
-		},
-		{
-			"name" : "CMAKE_UNAME",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "uname command"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/bin/uname"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1151,7 +1279,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[TRUE][TRUE][c ][v3.1()]"
+			"value" : "[TRUE][TRUE][c ][v2.0()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_MPI_C",
@@ -1163,7 +1291,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so][mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]"
+			"value" : "[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX",
@@ -1175,23 +1303,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so][/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so][mpi_cxx;mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]"
+			"value" : "[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]"
 		},
 		{
 			"name" : "MPIEXEC_EXECUTABLE",
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
 					"value" : "Executable for running MPI programs."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/mpiexec"
+			"value" : "C:/Program Files/Microsoft MPI/Bin/mpiexec.exe"
 		},
 		{
 			"name" : "MPIEXEC_MAX_NUMPROCS",
@@ -1287,7 +1411,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/mpicxx"
+			"value" : "MPI_CXX_COMPILER-NOTFOUND"
 		},
 		{
 			"name" : "MPI_CXX_COMPILER_INCLUDE_DIRS",
@@ -1303,7 +1427,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+			"value" : ""
 		},
 		{
 			"name" : "MPI_CXX_COMPILE_DEFINITIONS",
@@ -1331,7 +1455,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "MPI CXX compilation options"
+					"value" : "MPI CXX compilation flags"
 				}
 			],
 			"type" : "STRING",
@@ -1351,7 +1475,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/include"
+			"value" : "C:/Program Files (x86)/Microsoft SDKs/MPI/Include"
 		},
 		{
 			"name" : "MPI_CXX_LIB_NAMES",
@@ -1367,7 +1491,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "mpi_cxx;mpi"
+			"value" : "msmpi"
 		},
 		{
 			"name" : "MPI_CXX_LINK_FLAGS",
@@ -1431,7 +1555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/mpicc"
+			"value" : "MPI_C_COMPILER-NOTFOUND"
 		},
 		{
 			"name" : "MPI_C_COMPILER_INCLUDE_DIRS",
@@ -1447,7 +1571,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+			"value" : ""
 		},
 		{
 			"name" : "MPI_C_COMPILE_DEFINITIONS",
@@ -1475,7 +1599,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "MPI C compilation options"
+					"value" : "MPI C compilation flags"
 				}
 			],
 			"type" : "STRING",
@@ -1495,7 +1619,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/include"
+			"value" : "C:/Program Files (x86)/Microsoft SDKs/MPI/Include"
 		},
 		{
 			"name" : "MPI_C_LIB_NAMES",
@@ -1511,7 +1635,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "mpi"
+			"value" : "msmpi"
 		},
 		{
 			"name" : "MPI_C_LINK_FLAGS",
@@ -1566,7 +1690,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "MPI_mpi_LIBRARY",
+			"name" : "MPI_msmpi_LIBRARY",
 			"properties" : 
 			[
 				{
@@ -1575,27 +1699,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Location of the mpi library for MPI"
+					"value" : "Location of the msmpi library for Microsoft MPI"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so"
-		},
-		{
-			"name" : "MPI_mpi_cxx_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Location of the mpi_cxx library for MPI"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so"
+			"value" : "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"
 		},
 		{
 			"name" : "PKG_CONFIG_ARGN",
@@ -1639,7 +1747,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mohamed-amir/Desktop/HPC/Assignment 1/Problem 2/cmake-build-debug"
+			"value" : "D:/My Study/Faculty/Third Year/Second Semester/HPC/Assignments/Assignment 1/Assignment 1/Problem 2/cmake-build-debug"
 		},
 		{
 			"name" : "Problem_2_IS_TOP_LEVEL",
@@ -1663,7 +1771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mohamed-amir/Desktop/HPC/Assignment 1/Problem 2"
+			"value" : "D:/My Study/Faculty/Third Year/Second Semester/HPC/Assignments/Assignment 1/Assignment 1/Problem 2"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

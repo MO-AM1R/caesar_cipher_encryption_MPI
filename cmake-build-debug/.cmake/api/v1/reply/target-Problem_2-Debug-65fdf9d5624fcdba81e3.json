@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Problem_2"
+			"path" : "Problem_2.exe"
+		},
+		{
+			"path" : "Problem_2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -19,7 +22,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindMPI.cmake"
+			"C:/Users/memoh/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake"
 		],
 		"nodes" : 
 		[
@@ -76,12 +79,7 @@
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "/usr/lib/x86_64-linux-gnu/openmpi/include"
-				},
-				{
-					"backtrace" : 6,
-					"isSystem" : true,
-					"path" : "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+					"path" : "C:/Program Files (x86)/Microsoft SDKs/MPI/Include"
 				}
 			],
 			"language" : "C",
@@ -113,24 +111,19 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib",
+				"backtrace" : 5,
+				"fragment" : "\"C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib\"",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 5,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so",
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "Problem_2",
-	"nameOnDisk" : "Problem_2",
+	"nameOnDisk" : "Problem_2.exe",
 	"paths" : 
 	{
 		"build" : ".",

@@ -83,7 +83,7 @@ int main(int argc, char *argv[]) {
             answer[ind] = '\0';
         }
 
-        printf("%s\n", answer);
+        printf("The output text: %s\n", answer);
     }
 
     MPI_Finalize();
